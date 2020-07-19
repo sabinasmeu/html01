@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Email/tel</title>
-</head>
-<body>
+  <head>
+    <title>Email/tel</title>
+  </head>
+  <body>
+    <form>
+      <h5>Detalii utilizatori</h5>
+      <input type="text" name="name" placeholder="Nume" required />
+      <br />
 
-  <form>
-      
-    <button type="submit">Trimite</button>
-  </form>
+      <input type="surname" name="surname" placeholder="Prenume" required />
+      <br />
+      <input
+        type="username"
+        name="username"
+        placeholder="Nume utilizator"
+        maxlength="25"
+        minlength="3"
+        required
+      />
+      <br />
+      <input type="email" name="email" placeholder="Email@email.com" required />
+      <br />
+      <input type="tel" name="phone" placeholder="Numar de Telefon" required />
+      <br />
+      <br />
 
-</body>
+      <button type="submit">Trimite</button>
+    </form>
+  </body>
 </html>
-

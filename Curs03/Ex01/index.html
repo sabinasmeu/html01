@@ -1,18 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Forms</title>
-</head>
-<body>
+  <head>
+    <title>salut</title>
+  </head>
+  <body>
+    <h1>Formularul meu:</h1>
+    <br />
+    <form>
+      <h5>Detalii principale</h5>
 
-  <h1>Formularul meu:</h1>
-  <form>
-    <h5>Detalii principale</h5>
-    <input name="name" placeholder="Nume">
-    <input name="surname" placeholder="Prenume">
+      <input type="text" name="name" placeholder="Nume" />
+      <br />
+      <input type="text" name="surname" placeholder="Prenume" />
+      <br />
+      <input type="text" name="nickname" placeholder="Porecla" />
+      <br />
+      <input
+        type="text"
+        name="carebrand"
+        placeholder="Marca Auto"
+        maxlength="10"
+        minlength="4"
+        value="Skoda"
+      />
+      <br />
+      <input type="text" name="petName" placeholder="Nume Animal" />
+      <br />
+      <input
+        type="text"
+        name="phoneBrand"
+        placeholder="Marca Telefon"
+        maxlength="30"
+        minlength="2"
+        value="iPhone"
+      />
+      <br />
+      <input type="text" name="phoneNumber" placeholder="Numar Telefon" />
+      <br />
+      <input type="text" name="friendSurname" placeholder="Prenume Prieten" />
+      <br />
+      <input type="email" required placeholder="E-mail" />
+      <br />
 
-    <button type="submit">Trimite</button>
-  </form>
+      <input type="tel" required placeholder="Mobil" />
 
-</body>
+      <br />
+      <br />
+
+      <button type="submit">Trimite</button>
+    </form>
+  </body>
 </html>
