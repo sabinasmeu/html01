@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Place Order</title>
+</head>
+
+<body>
+  <a href="wwww.google.ro">Home</a>
+  <a href="www.google.ro">Place Order</a>
+  <a href="www.google.ro">Customer Service</a>
+  <a href="www.google.ro">Contact</a>
+  <br>
+  <br>
+  <h1>Place Order</h1>
+  <p>This is the <b>guest checkout</b></p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+  </p>
+  <h3>Products</h3>
+  <img
+    src="images/mouse.jpg"
+    alt="mouse.jpg"
+  >
+  <button type="button">Sterge</button>
+  <button type="button">Editeaza</button>
+  <hr>
+  <img
+    src="images/extension_chord.jpg"
+    alt="extension_chord.jpg"
+  >
+  <button type="button">Sterge</button>
+  <button type="button">Editeaza</button>
+  <hr>
+  <img
+    src="images/phone.jpg"
+    alt="phone.jpg"
+  >
+  <button type="button">Sterge</button>
+  <button type="button">Editeaza</button>
+  <hr>
+  <h3>Order Now</h3>
+  <p>On our website <i>no account is needed.</i>
+  </p>
+  <p>1.First we need some info about yourself. <b>Don’t forget to provide a phone.</b>
+  </p>
+  <p>2.Then we need your <i>real </i>shipping address. </p>
+  <p>3.Finally, your credit card information.
+
+  </p>
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <br>
+      <p>Title: <label for="gender-mr">Mr</label>
+        <input
+          type="radio"
+          name="gender-mr"
+          id="gender-mr"
+        >
+        <label for="gender-ms">Ms</label>
+        <input
+          type="radio"
+          name="gender-ms"
+          id="gender-ms"
+        >
+        <label fpr="unspec">Unspecified</label>
+        <input
+          type="radio"
+          name="unspec"
+          id="unspec"
+        ></p>
+      <label for="name">*Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="Name"
+      ><br><br>
+      <label for="surname">*Surname:</label>
+      <input
+        type="text"
+        id="surname"
+        name="surname"
+        placeholder="Surname"
+        required
+      ><br><br>
+      <label for="email">*Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email"
+        required
+      > <br><br>
+      <label for="phone"></label>*Phone</label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="Phone"
+        required
+      ><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Address</legend>
+      <br>
+      <label for="name-1">*Name:</label>
+      <input
+        type="text"
+        id="name-1"
+        name="name-1"
+        placeholder="Name"
+        required
+      ><br><br>
+      <label for="surname-1">*Surname:</label>
+      <input
+        type="text"
+        id="surname-1"
+        name="surname-1"
+        placeholder="Surname"
+        required
+      ><br><br>
+      <label for="phone-1">*Phone</label>
+      <input
+        type="tel"
+        name="phone-1"
+        id="phone-1"
+        placeholder="Phone"
+        required
+      ><br><br>
+      <label for="address-1">*Address Line 1:</label>
+      <input
+        type="text"
+        id="address-1"
+        name="address-1"
+        placeholder="Address Line 1"
+        required
+      ><br><br>
+      <label for="address-2">Address Line 2:</label>
+      <input
+        type="text"
+        name="address-2"
+        id="address-2"
+        required
+        placeholder="Address Line 2"
+      ><br><br>
+      <label for="city">*City:</label>
+      <input
+        type="text"
+        name="city"
+        id="city"
+        required
+        placeholder="City"
+      ><br><br>
+      <label for="state">*State:</label>
+      <select>
+        <option>--State--</option>
+        <option value="Iasi">Iasi</option>
+        <option value="Cluj">Cluj</option>
+        <option value="Timisoara">Timisoara</option>
+      </select><br><br>
+      <label for="postcode">*Postcode:</label>
+      <input
+        type="number"
+        id="postcode"
+        name="postcode"
+        placeholder="Postcode"
+      ><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Card Information</legend>
+      <br>
+      <label for="card-number">*Card number</label>
+      <input
+        type="text"
+        id="card-number"
+        name=card
+        placeholder="Card Number"
+        maxlength="12"
+        required
+      >
+      <br><br>
+      <label for="card-name">*Name on card</label>
+      <input
+        type="text"
+        placeholder="Name on card"
+        id=card-name
+        required
+      ><br><br>
+      <label for="expiry-month">*Expiry Card</label>
+      <input
+        type="month"
+        id="expiry-month"
+        name=month
+        min="01"
+        max="12"
+        value="2020-07"
+        required
+      >
+      <!--- <select
+      >
+      <label for="expiry-month">*Expiry Card</label>
+      <option value="January">January</option>
+      <option value="January">January</option>
+      </select>
+
+      <label>*Expiry Year</label>
+      <select>
+        <option>2019</option>
+      </select> -->
+      <br><br>
+      <label for="cvv">*CVV</label>
+      <input
+        type="text"
+        id="cvv"
+        name="cvv"
+        maxlength="3"
+        placeholder="123"
+        required
+      >
+      <p><em>We do not store credit card information!</em></p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Form Controls</legend>
+      <br>
+      <input
+        name="agree"
+        id="agree"
+        type="checkbox"
+        required
+      ><label for="agree">*You are required to agree to the <a href="#">terms and conditions</a></label>
+      <br><br>
+      <input
+        name="send-email"
+        id="send-email"
+        type="checkbox"
+        required
+      ><label for="send-email">Can we send you emails?</label>
+      <br><br>
+      <input
+        type="checkbox"
+        required
+        name="GDPR"
+        id=gdpr
+      ><label for="gdpr"> GDPR generic consent?</label> <br><br>
+
+      <button type="button">PLACE ORDER</button>
+      <button type="reset">Reset</button>
+    </fieldset>
+  </form>
+
+</body>
+
+</html>
