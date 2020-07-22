@@ -1,50 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Textarea</title>
-  </head>
-  <body>
-    <form>
+
+<head>
+  <title>Textarea</title>
+</head>
+
+<body>
+  <form>
+    <br />
+    <fieldset>
+      <legend>Detalii Principale</legend>
       <br />
-      <fieldset>
-        <legend>Detalii Principale</legend>
-        <br />
-        <label for="name">*Nume:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          maxlength="30"
-          minlength="5"
-          placeholder="Nume"
-          required
-        />
-        <br />
-        <label for="surname">*Prenume:</label>
-        <input
-          type="text"
-          id="surname"
-          name="surname"
-          maxlength="30"
-          minlength="5"
-          placeholder="Prenume"
-        />
-      </fieldset>
-      <br />
-      <br />
-      <label for="message">*Mesaj:</label>
-      <br />
-      <textarea
-        name="message"
-        id="message"
-        cols="30"
-        rows="4"
-        placeholder="Mesajul tau aici"
+      <label for="name">*Nume:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        maxlength="30"
+        minlength="5"
+        placeholder="Nume"
         required
-      ></textarea>
+      />
       <br />
-      <br />
-      <button type="submit">Trimite</button>
-    </form>
-  </body>
+      <label for="surname">*Prenume:</label>
+      <input
+        type="text"
+        id="surname"
+        name="surname"
+        maxlength="30"
+        minlength="5"
+        placeholder="Prenume"
+      />
+    </fieldset>
+    <br />
+    <br />
+    <label for="message">*Mesaj:</label>
+    <br />
+    <br>
+    <textarea
+      name="message"
+      id="message"
+      cols="30"
+      rows="4"
+      placeholder="Mesajul tau aici"
+      required
+    ></textarea>
+    <br>
+    <br>
+    <label for="details">Detalii: </label>
+    <br>
+    <br>
+    <textarea
+      name="Detalii"
+      id="details"
+      cols="30"
+      rows="8"
+      placeholder="Detalii"
+    ></textarea>
+    <br />
+    <br />
+    <button type="submit">Trimite</button>
+  </form>
+</body>
+
 </html>
