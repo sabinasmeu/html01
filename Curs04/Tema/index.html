@@ -6,10 +6,33 @@
 </head>
 
 <body>
-  <a href="wwww.google.ro">Home</a>
-  <a href="www.google.ro">Place Order</a>
-  <a href="www.google.ro">Customer Service</a>
-  <a href="www.google.ro">Contact</a>
+  <p>
+    <a
+      href="https://www.google.com/"
+      title="Home"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Home</a>
+    <a
+      href="https://www.google.com/"
+      title="Place Order"
+      target="_blank"
+      rel="noopener noreferrer"
+    >Place Order</a>
+    <a
+      href="https://www.google.com/"
+      title="Customer Service"
+      target="_blank"
+      rel="noopener noreferrer"
+    >Customer Service</a>
+    <a
+      href=https://www.google.com/
+      title="Contact"
+      target="_blank"
+      rel="noopener noreferrer"
+    >Contact</a>
+  </p>
   <br>
   <br>
   <h1>Place Order</h1>
@@ -45,12 +68,19 @@
   <h3>Order Now</h3>
   <p>On our website <i>no account is needed.</i>
   </p>
-  <p>1.First we need some info about yourself. <b>Don’t forget to provide a phone.</b>
-  </p>
-  <p>2.Then we need your <i>real </i>shipping address. </p>
-  <p>3.Finally, your credit card information.
-
-  </p>
+  <ol>
+    <li>
+      <p>First we need some info about yourself. <b>Don’t forget to provide a phone.</b>
+      </p>
+    </li>
+    <li>
+      <p>Then we need your <i>real </i>shipping address. </p>
+    </li>
+    <li>
+      <p>Finally, your credit card information.
+      </p>
+    </li>
+  </ol>
   <form>
     <fieldset>
       <legend>Personal Information</legend>
@@ -58,19 +88,19 @@
       <p>Title: <label for="gender-mr">Mr</label>
         <input
           type="radio"
-          name="gender-mr"
+          name="gender"
           id="gender-mr"
         >
         <label for="gender-ms">Ms</label>
         <input
           type="radio"
-          name="gender-ms"
+          name="gender"
           id="gender-ms"
         >
         <label fpr="unspec">Unspecified</label>
         <input
           type="radio"
-          name="unspec"
+          name="gender"
           id="unspec"
         ></p>
       <label for="name">*Name:</label>
@@ -110,11 +140,11 @@
     <fieldset>
       <legend>Address</legend>
       <br>
-      <label for="name-1">*Name:</label>
+      <label for="address-name-1">*Name:</label>
       <input
         type="text"
-        id="name-1"
-        name="name-1"
+        id="address-name-1"
+        name="address-name-1"
         placeholder="Name"
         required
       ><br><br>
