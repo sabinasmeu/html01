@@ -1,0 +1,25 @@
+a {
+  color: green;
+}
+i {
+  color: red;
+}
+.line {
+  text-decoration: underline;
+}
+.links a {
+  text-decoration: none;
+}
+p .line {
+  color: gray;
+}
+b {
+  color: purple;
+}
+
+/* 12 */
+
+a[href$='.com'] a[href$='.com/'] a[href*='.com/'] {
+  color: black;
+  text-decoration: underline;
+}
