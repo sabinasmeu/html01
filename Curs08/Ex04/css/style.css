@@ -1,4 +1,67 @@
 .container {
-  border: 1px solid #000; 
+  border: 1px solid #000;
   padding: 5px;
+}
+/* Pozitioneaza elementul nav absolut, astfel incat sa fie in dreapta sus a ecranului, cu un fundal negru si text alb
+
+ */
+.nav-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  padding: 5px;
+}
+nav a {
+  color: white;
+  padding: 0 5px;
+}
+/* In fiecare sectiune (apa, acid, ozon) preia cuvantul dedicat fiecarei sectiuni, pozitioneaza-l absolut fata de elementul container, adauga-i fundal alb si o bordura neagra si afiseaza-l pe bordura de sus a containerului (similar cu fieldset) */
+.container {
+  position: relative;
+}
+.container .legend {
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+  position: absolute;
+  left: 15px;
+  top: -5px;
+}
+
+/* Folosind elemente span, proprietatea font-size si pozitionarea relativa, corecteaza formulele astfel incat acestea sa aibe indicii corecti (similar cu sub)
+*/
+
+.container .formula {
+  position: relative;
+  font-size: 20px;
+  bottom: -4px;
+}
+
+/* Creeaza un element nav nou care sa contina linkurile intr-o lista neordonata, si aplica-i un fundal verde.   */
+/* Folosind pozitionarea sticky, pozitioneaza-l in stanga jos, acesta trebuie sa fie mereu in ecran, indiferent de pozitia scrollbarului.
+ */
+
+.nav-sticky {
+  position: fixed;
+  background-color: green;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  z-index: 1;
+}
+.nav-sticky ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.nav-sticky li {
+  display: inline;
+}
+
+/* Ajusteaza paddingul elementului body astfel incat elementele de navigatie sa nu incurce citirea */
+
+.body{
+  padding-top 30px;
+  padding-bottom: 30px;
 }
