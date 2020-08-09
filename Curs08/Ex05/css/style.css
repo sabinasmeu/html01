@@ -1,0 +1,99 @@
+/*
+In documentul din director, creaza un element div cu clasa my-div care sa aibe latimea de 300px, inaltimea de 202px, fundalul rosu si bordura verde de 1px. Elementul sa fie si centrat cu un box shadow de 1px 1px 5px de culoare verde
+*/
+.my-div {
+  width: 300px;
+  height: 202px;
+  background-color: red;
+  border: 1 px solid green;
+  margin: 0 auto;
+  box-shadow: 1px 1px 5px green;
+}
+/* Creaza un div cu clasa blue latimea de 200px, inaltimea de 100px, colturile rotunjite de 20 si fundalul albastru, un padding pe toate partile de 15px si un box shadow inset de 2px 2px 10px de culoare neagra
+ */
+.blue {
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: blue;
+  box-shadow: 2px 2px 10 px blck inset;
+}
+/* Creaza un div cu clasa container care sa aibe latimea de 75%, inaltime nespecificata cu o bordura verde solida de 3px si toate valorile pentru padding 15px cu un box shadow de 3px 3px 2px albastru
+ */
+.container {
+  width: 75%;
+  border: 3px solid green;
+  padding: 15px;
+  box-shadow: 3px 3px 2px blue;
+  margin: 0 auto;
+}
+/*Creaza un div cu clasa green, latimea de 500px, inaltimea de 220px, cu bordura neagra de 1px, centrat care sa aibe valorile pentru margin de 20, valorile pentru padding de 15 si un box shadow de 15px 15px 2px de culoare gri
+*/
+.green {
+  width: 500px;
+  height: 220px;
+  border: 1px solid black;
+  margin: 20px auto;
+  padding: 15px;
+  box-shadow: 15px 15px 2px gray;
+}
+/* Creaza un div cu clasa purple si fundalul mov, bordura de 2 px punctata verde, colturile rotunjite de 40 cu valorile 20 pentru padding si un box shadow de 5px 5px 5px de culoare maro
+ */
+.purple {
+  background-color: indigo;
+  border: 2px dotted green;
+  border-radius: 40px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px brown;
+}
+/* Creaza un div cu clasa turquoise si fundalul turcoaz, bordura albastra de 1px, colturile rotunjite de 15, un box shadow de 2px 2px 5px de culoare rosie si urmatoarele valori pentru padding:
+padding-top, padding-bottom -> 11px
+padding-left, padding-right -> 20px
+ */
+.turquise {
+  background-color: turquoise;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px red;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+/* Creaza un div cu clasa transparent, cu bordura rosie de 2px un box shadow de 10px 10px 5px de culoare gri, valorile pentru padding setate la 20 pentru toate partile, si pentru margin:
+margin-bottom, margin-top ->20px;
+margin-left, margin-right -> auto
+ */
+.transparent {
+  border: 2px solid red;
+  box-shadow: 10px 10px 5px gray;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-left: auto;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border: 1px solid black;
+}
+.box .red,
+.box .pink {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.box .red {
+  background-color: red;
+  top: 20px;
+  left: 20px;
+  z-index: 2px;
+}
+.box .pink {
+  background-color: pink;
+  top: 20px;
+  top: 20px;
+  z-index: 2px;
+}
