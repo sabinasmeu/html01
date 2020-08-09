@@ -1,0 +1,38 @@
+/* Elimina linia ancorelor primului element li de nivel 1 din clasa nested (:first-child)*/
+.nested > li:first-child > a{
+text-decoration: none;
+}
+
+}
+/* Elimina linia ancorelor ultimului element li de nivel 2 din clasa nested (:first-child)
+ */
+ .nested > li > ul > li:last-child() > a { text-decoration: none;
+
+ }
+
+/* Coloreaza fundalul galben pentru elemente li impare din clasa elementul cu clasa last-list (:nth-child)*/
+
+.last-list > li:nth-child(odd) {
+  background-color: yellow;
+}
+/* Coloreaza fundalul gri pentru al treilea element li de nivel 1 din elementele cu clasa my-list (:nth-child) */
+
+.my-list > li:nth-child(3){
+  background-color: grey;
+}
+
+/* Coloreaza verde fiecare al patrulea element h3 din document (:nth-of-type) */
+
+h3:nth-of-type(4n){color: green;
+
+}
+
+/* Coloreaza albastru cu un fundal verde elementele impare de tip h2 din document (:nth-of-type) */
+
+h2:nth-of-type(odd){
+  background-color: green;
+  color:white;
+}
+
+/* liste nive superior */
+/* body > ul: >  */

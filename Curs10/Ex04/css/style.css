@@ -1,1 +1,43 @@
+/* Coloreaza mov elementele b care se afle in paragrafe (descendenta)*/
+p b {
+  color: purple;
+}
 
+/* Subliniaza elementele i care se afla in listele neordonate (descendenta)*/
+
+ul i {
+  text-decoration: underline;
+}
+/* Coloreaza elementele h2 care urmeaza imediat dupa h1 verzi (adiacenta)
+ */
+h1 + h2 {
+  color: green;
+}
+/* Sublineaza cu o linie punctata rosie elementele h3 care urmeaza imediat dupa h2 si seteaza (folosind shorthand) marginea de sus la 8px. Restul marginilor trebuie sa ramana la fel. (adiacenta)*/
+
+h2 + h3 {
+  text-decoration: underline dotted red;
+  margin: 8px 0 18px 0;
+}
+/* Seteaza o bordura de 1px albastra si un padding de 5px in jurul elementelor h3 care urmeaza in document dupa un element ol (adiacenta generala) */
+ol ~ h3 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+/* Seteaza o bordura de 1 px punctata, neagra si un padding de 20px in jurul elementelor p care urmeaza dupa elemente ul (adiacenta generala)*/
+ul ~ p {
+  border: 1px dotted black;
+  padding: 20px;
+}
+
+/* Coloreaza maro elementele li care sunt descendenti directi ai listelor neordonate care sunt la randul lor descendenti directi ai listelor nerodonate*/
+
+ul > li > ul > li {
+  color: brown;
+}
+/* Subliniaza elementele li de nivel doi al elementelor ul */
+
+ul > li > ul > li {
+  text-decoration: underline;
+}
+/* seclector acora ul > li > ul > li > a */
