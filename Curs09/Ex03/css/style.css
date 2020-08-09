@@ -1,5 +1,5 @@
 .card {
-  width: 80%; 
+  width: 80%;
   margin: 25px auto;
   border: 1px solid #000;
   overflow: hidden;
@@ -9,3 +9,18 @@
   float: left;
 }
 
+/* Aplica proprietatea float: left/right pe clasele dedicate din codul documentului din director astfel incat fiecare imagine sa fie trasa in partea corecta.
+ */
+.orientation-left img {
+  float: left;
+  margin: 5px;
+}
+.orientation-right img {
+  float: right;
+  margin: 5px;
+}
+/* Pentru ultimul card, creaza un selector care sa aplice float: none pe imaginea pisicii, astfel incat imaginea sa se intoarca in flowul normal.
+ */
+.card .float-left {
+  float: none;
+}
