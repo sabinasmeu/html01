@@ -31,4 +31,14 @@ p i:hover {
 
 /* Aplica pe ancorele impare din lista cu clasa .main o stare de hover in care acestea sa se faca verzi iar linia sa dispara complet*/
 
+.main li:nth-of-type(odd) a:hover {
+  color: green;
+  text-decoration: line-through;
+}
+
 /* Aplica pe elementele b din paragafe o stare de hover in care acestea devin rosii si se muta cu 2px in sus  */
+
+p b:hover {
+  color: red;
+  translate: translate(2px);
+}

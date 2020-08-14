@@ -1,14 +1,13 @@
 /* Elimina linia ancorelor primului element li de nivel 1 din clasa nested (:first-child)*/
-.nested > li:first-child > a{
-text-decoration: none;
+.nested > li:first-child > a {
+  text-decoration: none;
 }
 
-}
 /* Elimina linia ancorelor ultimului element li de nivel 2 din clasa nested (:first-child)
  */
- .nested > li > ul > li:last-child() > a { text-decoration: none;
-
- }
+.nested > li > ul > li:last-child() > a {
+  text-decoration: none;
+}
 
 /* Coloreaza fundalul galben pentru elemente li impare din clasa elementul cu clasa last-list (:nth-child)*/
 
@@ -17,22 +16,62 @@ text-decoration: none;
 }
 /* Coloreaza fundalul gri pentru al treilea element li de nivel 1 din elementele cu clasa my-list (:nth-child) */
 
-.my-list > li:nth-child(3){
+.my-list > li:nth-child(3) {
   background-color: grey;
 }
 
 /* Coloreaza verde fiecare al patrulea element h3 din document (:nth-of-type) */
 
-h3:nth-of-type(4n){color: green;
-
+h3:nth-of-type(4n) {
+  color: green;
 }
 
 /* Coloreaza albastru cu un fundal verde elementele impare de tip h2 din document (:nth-of-type) */
 
-h2:nth-of-type(odd){
+h2:nth-of-type(odd) {
   background-color: green;
-  color:white;
+  color: white;
 }
 
 /* liste nive superior */
 /* body > ul: >  */
+
+/* Subliniaza primele elemente li din listele neordonate cu clasa u-line (si doar din listele neordonate)  (:first-child)*/
+
+.u-line > li:first-child {
+  text-decoration: underline;
+  color: brown;
+}
+
+/* Subliniaza ultimele elemente li din toate listele neordonate (:last-child)*/
+
+ul > li:last-child {
+  text-decoration: underline;
+  color: aquamarine;
+}
+/* Adauga o linie prin ancora celui de-al doilea element li din elementul cu clasa last-list (:nth-child)
+ */
+
+.last-list > li:nth-child(2) > a {
+  text-decoration: underline;
+  color: red;
+}
+/* Coloreaza mov toate cuvintele “Dolor” si doar ele din document, fara a adauga clase in plus (:nth-child)*/
+
+li:nth-child(2n) {
+  color: rgb(180, 57, 0);
+}
+
+/* Aplica un fundal maro si un padding orizontal de 15px pe paragrafele impare (:nth-of-type)*/
+
+p:nth-of-type(odd) {
+  background-color: brown;
+  padding: 15px;
+}
+
+/* Inconjoara cu o bordura neagra de 1px  si un padding de 8px fiecare a 3-a lista neordonata de nivel superior din document. (:nth-of-type) */
+
+ul:nth-of-type(3) {
+  border: 1 px solid black;
+  padding: 8px;
+}

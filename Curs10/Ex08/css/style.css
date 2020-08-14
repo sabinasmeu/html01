@@ -20,5 +20,11 @@ select option:checked {
 }
 /* Pentru checkboxuri coloreaza elementul label roz deschis atunci cand checkboxul nu este activat
  */
+select option:checked + label {
+  background-color: pink;
+}
 /* Pentru grupul radio, coloreaza fundalul elementului label roz deschis atunci cand nu sunt activate
  */
+input[type='radio']:checked + label {
+  background-color: pink;
+}

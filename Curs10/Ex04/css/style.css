@@ -41,3 +41,56 @@ ul > li > ul > li {
   text-decoration: underline;
 }
 /* seclector acora ul > li > ul > li > a */
+
+/* Coloreaza albastru elementele i care se afle in paragrafe (descendenta)*/
+
+p > i {
+  color: blue;
+}
+
+/* Subliniaza elementele i care se afla in elementele cu clasa u-line (descendenta)*/
+
+u-line > i {
+  text-decoration: underline;
+}
+/* Elimina marginea de sus pentru paragrafele care se afla imediat dupa elemente h3 (adiacenta)*/
+
+p ~ h3 {
+  margin-top: unset;
+}
+
+/* Subliniaza elementele h2 care urmeaza imediat dupa elemente ol (adiacenta)*/
+
+ol ~ h2 {
+  text-decoration: underline red;
+}
+
+/* Adauga un padding orizontal de 12 si unul vertical de 10 elementelor p care urmeaza dupa elementul cu clasa random (adiacenta generala)*/
+
+p ~ .random {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline;
+}
+
+/* Coloreaza galben toate ancorele care se afla in listele neordonate ce urmeaza dupa elementul cu clasa last-list (adiacenta generala)*/
+
+.last-list ~ ul a {
+  color: yellow;
+}
+
+/* Subliniaza elementele li care sunt descendenti directi ai listelor cu clasa my-list */
+
+.my-list > li {
+  text-decoration: underline;
+  color: green;
+}
+
+/* Adauga un padding de 5px (display: inline-block) tuturor ancorelor (si doar lor) care se afla in listele de nivel doi ale elementului cu clasa .nested  */
+
+.nested > ul > li > a {
+  padding: 5px;
+  display: inline-block;
+}

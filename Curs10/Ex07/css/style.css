@@ -28,4 +28,25 @@ p a {
 
 /* Stileaza al doilea paragraf astfel incat sa arate ca o lista neordonata, folosind ::before pentru puncte care sa arate ca cercuri galbene alungite pe verticala
  */
+
+.my-second-list p::before {
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
 /* Folosind ::after pentru aceste ancore, stileaza romburi mov alungite pe verticala, folosind transformarii CSS (skew si rotate) */
+
+.my-second-list a::after {
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: violet;
+  margin-left: 10px;
+  transform: skew(15deg, 15deg) rotate(40deg);
+}

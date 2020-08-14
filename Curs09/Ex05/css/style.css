@@ -42,9 +42,19 @@ Tranzitioneaza lungimea cutiei rosii de la valoarea initiala la 120px pentru tre
 
 /* Tranzitioneaza lungimea si latimea cutiei mov pana la 100px peste 4 secunde cu functia ease si un delay de o secunda */
 .box-purple {
+  width: 100px;
+  height: 100px;
   transition: width 4s ease 1s, hight 4s ease 1s;
 }
 
 /* Roteste cutia maro cu -180 de grade si scade-i dimensiunile cu 10 pixel pentru 4 secunde cu functia ease-in */
+.box-brown {
+  transform: rotate(-180deg);
+  transition: width 10s, ease-in 4s, height 10s, ease-in 4s;
+}
 
 /* Tranzitioneaza functia transform scale(2) pe o perioada de 3 secunde cu functia ease-in-out */
+.box-yellow {
+  transform: scale(2);
+  transition: ease-in-out 3s;
+}
