@@ -1,0 +1,48 @@
+body {
+  color: lightgreen;
+}
+
+/* In fisierele din director, seteaza pe elementul body culoarea textului
+verde deschis, pentru a observa mostenirea  */
+
+/* Folosind keywordul inherit coloreaza si ancorele de culoarea textului,
+iar la hover, elimina sublinierea */
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Elimina discurile de la listele neordonate cu clasa list folosind */
+/* proprietatea list-style-type: none; */
+
+.list {
+  list-style-type: none;
+}
+
+/* Folosind keywordul inherit elimina discurile si de la listele care se afla in liste */
+
+.list ul {
+  list-style-type: inherit;
+}
+
+/* Centreaza elementul cu clasa .para-short, aplicandu-i latime de 50%
+ si margini verticale de 10px, si orizontale auto (pentru centrare), adauga-i
+ o bordura neagra de 1px si un padding de 15px  */
+
+.para-short {
+  width: 50%;
+  margin: 10px auto;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+/* Seteaza proprietatea width ca inherit, centreaza paragraful din elementul .para-short si adauga-i o bordura rosie de 1px  */
+
+.para-short p {
+  width: inherit;
+  border: 1px solid red;
+}
